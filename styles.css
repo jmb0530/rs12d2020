@@ -1,0 +1,146 @@
+/* Welcome Section */
+#welcome {
+    background-color: #DB4A41;
+    color: white;
+    padding: 7% 15%;
+}
+
+#welcome img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 4.5rem;
+    font-family: 'Kalam', cursive;
+}
+
+/* Explanation Section */
+
+#explanation {
+    background-color: white;
+    color: #1e5f74;
+    padding: 7% 15%;
+    font-size: 1.5rem;
+}
+
+/* Calendar Section */
+
+#calendar {
+    background-color: #a0d5d3;
+    padding: 7% 10%;
+    color: #1e5f74;
+} 
+  
+  label {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    cursor: pointer;
+  
+    display: flex;
+    min-height: 100%;
+    width: 100%;
+    height: 120px;
+  }
+  
+  .door {
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: all 300ms;
+    border: 2px dashed transparent;
+    border-radius: 10px;
+  }
+  
+    .door div {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      backface-visibility: hidden;
+      
+      border-radius: 6px;
+  
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      /* typography */
+      font-family: 'Kalam', cursive;
+      color: #FFF;
+      background-color: #DB4A41;
+      font-size: 2em;
+      font-weight: bold;
+      text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.2);
+    }
+  
+    label:hover .door {
+      border-color: #385052;
+    }
+
+  /* Activity Section */
+
+    details > summary {
+        list-style: none;
+      }
+      details > summary::-webkit-details-marker {
+        display: none;
+      }
+
+      details h3 {
+          text-align: center;
+      }
+
+      ul {
+        list-style:none;
+        padding-left: 1rem;
+      }
+
+      .activity-heading {
+        font-family: 'Kalam', cursive;
+        width: 100%;
+        height: 300px;
+        color: #1e5f74;
+        padding: 7% 15%;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 4.5rem;
+        font-weight: 900;
+        background-color: #DB4A41;
+        background-image: radial-gradient(white 15%, transparent 16%),
+        radial-gradient(white 15%, transparent 16%);
+        background-size:60px 60px;
+        background-position: 0 0, 30px 30px;
+      }
+
+      .activity-description {
+          color: #1e5f74;
+          padding: 3% 15% 7%;
+          text-align: left;
+          font-size: 1.5rem;
+      }
+
+      .activity-task {
+        color:#1e5f74;
+        text-align: center;
+        background-color: #a0d5d3;
+        font-size: 1.5rem;
+        padding: 7% 15%;
+    }
+
+      .activity-task  a {
+        text-decoration: none;
+        color: #1e5f74;
+    }
+
+  .activity-task a:hover {
+        color: white;
+    }
+
+      img {
+          width: 50%;
+      }
+
+      @media (max-width: 1028px) {
+          body {
+            text-align: center;
+
+          }
+      }
